@@ -17,8 +17,13 @@ function PostApi() {
       image: image,
     };
 
-    axios
-      .postForm("https://rushabhmodi25.000webhostapp.com/insert.php", data)
+    axios({
+        method: "post",
+        url: "https://rushabhmodi25.000webhostapp.com/insert.php",
+        data: data,
+        headers: { "Content-Type": "multipart/form-data" },
+      })
+      // axios.postForm("https://rushabhmodi25.000webhostapp.com/insert.php", data)
       .then((res) => {
         console.log(res);
       })
