@@ -1,3 +1,4 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 // import Fcomp from './Components/FunComp';
 // import ClassComp from './Components/ClassComp';
@@ -11,14 +12,26 @@ import "./App.css";
 // import MemoDemo from "./Hooks/MemoDemo";
 // import UseHooks from "./Hooks/UseHooks";
 // import CreateContextDemo from "./Hooks/CreateContextDemo";
-import PostApi from "./ApiCall/PostApi";
-import GetApi from "./ApiCall/GetApi";
+// import PostApi from "./ApiCall/PostApi";
+// import GetApi from "./ApiCall/GetApi";
+import Create from "./CRUDapi/Create";
+import Edit from "./CRUDapi/Edit";  
+import Show from "./CRUDapi/Show";
 
 function App() {
   return (
     <div className="App">
-      <PostApi />
-      <GetApi />
+      {/* <Create />
+      <Show /> */}
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Create />}></Route>
+          <Route path="/show" element={<Show />}></Route>
+          <Route path="/edit/:ids" element={<Edit />}></Route>
+        </Routes>
+      </BrowserRouter>
+      
+      
     </div>
   );
 }

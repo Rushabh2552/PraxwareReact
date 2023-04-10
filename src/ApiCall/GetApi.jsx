@@ -188,7 +188,6 @@ function GetApi() {
             <th>Name</th>
             <th>Email</th>
             <th>password</th>
-            <th>Image</th>
           </tr>
         </thead>
         <tbody>
@@ -199,9 +198,6 @@ function GetApi() {
                 <td>{val.name}</td>
                 <td>{val.email}</td>
                 <td>{val.password}</td>
-                <td>
-                  <img src={val.image} alt="" />
-                </td>
               </tr>
             );
           })}
