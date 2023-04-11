@@ -17,7 +17,8 @@ import "./App.css";
 // import Create from "./CRUDapi/Create";
 // import Edit from "./CRUDapi/Edit";  
 // import Show from "./CRUDapi/Show";
-import Login from "./CRUDapi/Login";
+// import Login from "./CRUDapi/Login";
+import LoginForm from "./RegiForm/LoginForm";
 
 function App() {
   return (
@@ -31,7 +32,7 @@ function App() {
           <Route path="/edit/:ids" element={<Edit />}></Route>
         </Routes>
       </BrowserRouter> */}
-      <Login />
+      <LoginForm />
       
     </div>
   );
