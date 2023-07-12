@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { EmployeeContext } from "./CreateContextDemo";
 
-function UseHooks() {
+function UseContextDemo() {
   const empContext = useContext(EmployeeContext);
   return (
     <div>
@@ -10,4 +10,4 @@ function UseHooks() {
   );
 }
 
-export default UseHooks;
+export default UseContextDemo;

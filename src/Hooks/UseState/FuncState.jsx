@@ -10,8 +10,8 @@ function FunctionalState() {
             <h1>{num}</h1>
             <button onClick={()=> setNum(num + 1)}>Change Num</button>
 
-            <h1>{name}</h1>
-            <h1>{num}</h1>
+            {/* <h1>{name}</h1>
+            <h1>{num}</h1> */}
         </div>
     )
 }

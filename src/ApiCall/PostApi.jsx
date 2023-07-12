@@ -16,11 +16,11 @@ function PostApi() {
     };
 
     axios({
-        method: "post",
-        url: "https://rushabhmodi25.000webhostapp.com/insert.php",
-        data: data,
-        headers: { "Content-Type": "multipart/form-data" },
-      })
+      method: "post",
+      url: "https://rushabhmodi25.000webhostapp.com/insert.php",
+      data: data,
+      headers: { "Content-Type": "multipart/form-data" },
+    })
       // axios.postForm("https://rushabhmodi25.000webhostapp.com/insert.php", data)
       .then((res) => {
         console.log(res);
@@ -44,7 +44,6 @@ function PostApi() {
         <input type="password" onChange={(e) => setPassword(e.target.value)} />
 
         <input type="submit" />
-
       </form>
     </div>
   );

@@ -35,6 +35,7 @@ function Create() {
 
   return (
     <div>
+    <h1>Register</h1>
       <form onSubmit={handleForm}>
         <label>Name:</label>
         <br />
@@ -47,7 +48,6 @@ function Create() {
         <label>Password:</label>
         <br />
         <input type="password" onChange={(e) => setPassword(e.target.value)} />
-
         <br />
         <input type="submit" />
       </form>
@@ -55,5 +55,6 @@ function Create() {
     </div>
   );
 }
+
 
 export default Create;
